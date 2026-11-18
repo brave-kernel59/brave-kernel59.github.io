@@ -1,0 +1,1297 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>91干逼精产区-精品内容产区导航</title>
+<meta name="description" content="91干逼精产区是整理精品内容产区与更新节奏的导航页，按分类、榜单、体验指南和常见问题梳理条目，收录频道索引、内容更新与选片参考，帮助快速定位想看的板块。">
+<meta name="keywords" content="91干逼精产区">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b5312f'/%3E%3Cpath d='M18 44V20h8l6 12 6-12h8v24h-7V31l-5 9h-4l-5-9v13z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --brand:#b5312f;
+  --brand-dark:#8d2321;
+  --brand-soft:#fbeceb;
+  --ink:#20222a;
+  --ink-2:#4a4e5a;
+  --ink-3:#767b８a;
+  --ink-muted:#7b8090;
+  --line:#e4e2de;
+  --line-soft:#efece8;
+  --bg:#faf8f5;
+  --card:#ffffff;
+  --accent:#1f6f66;
+  --accent-soft:#e6f1ef;
+  --gold:#b9862f;
+  --radius-s:8px;
+  --radius:14px;
+  --radius-l:22px;
+  --shadow-s:0 1px 2px rgba(32,34,42,.06);
+  --shadow:0 6px 20px rgba(32,34,42,.08);
+  --shadow-l:0 14px 40px rgba(32,34,42,.12);
+  --space-1:6px;
+  --space-2:12px;
+  --space-3:18px;
+  --space-4:26px;
+  --space-5:38px;
+  --space-6:56px;
+  --font-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-serif:"Songti SC","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;
+  --max:1180px;
+  --stick-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.section{scroll-margin-top:var(--stick-h)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+
+/* 公告条 + 页头 吸顶 */
+.stick-top{position:sticky;top:0;z-index:60}
+.notice{
+  background:linear-gradient(90deg,var(--brand-dark),var(--brand));
+  color:#fff;font-size:13.5px;letter-spacing:.2px;
+}
+.notice .wrap{display:flex;align-items:center;gap:14px;min-height:38px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px}
+.notice b{font-weight:700;background:rgba(255,255,255,.16);padding:1px 8px;border-radius:20px;font-size:12px;white-space:nowrap}
+.notice .dot{width:5px;height:5px;background:#ffd76a;border-radius:50%;flex:none}
+.notice a{text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+
+.site-header{
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  box-shadow:var(--shadow-s);
+}
+.header-inner{display:flex;align-items:center;gap:20px;min-height:60px;padding-top:8px;padding-bottom:8px}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand-mark{width:38px;height:38px;flex:none;border-radius:11px;box-shadow:0 3px 10px rgba(181,49,47,.28)}
+.brand-name{font-weight:800;font-size:19px;letter-spacing:.5px;color:var(--brand-dark)}
+.brand-sub{display:block;font-size:11px;color:var(--ink-muted);letter-spacing:2px;font-weight:400;line-height:1.4}
+.nav-main{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav-main a{
+  padding:7px 12px;border-radius:20px;font-size:14.5px;color:var(--ink-2);
+  transition:background .18s,color .18s;white-space:nowrap;
+}
+.nav-main a:hover,.nav-main a:focus-visible{background:var(--brand-soft);color:var(--brand-dark)}
+.nav-main a.active{background:var(--brand);color:#fff}
+.header-act{display:flex;align-items:center;gap:10px;flex:none}
+.menu-btn{
+  display:none;align-items:center;gap:7px;border:1px solid var(--line);background:#fff;
+  padding:7px 12px;border-radius:10px;font-size:14px;color:var(--ink);cursor:pointer;
+  font-family:inherit;
+}
+.menu-btn:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:186px;border:1px solid var(--line);background:#fff;border-radius:20px;
+  padding:7px 14px 7px 34px;font-size:14px;font-family:inherit;color:var(--ink);
+  transition:border .2s,box-shadow .2s,width .2s;
+}
+.search-box input:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 3px rgba(181,49,47,.12);width:220px}
+.search-box .ico{position:absolute;left:12px;width:15px;height:15px;color:var(--ink-muted);pointer-events:none}
+.search-result{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;min-width:260px;
+  background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow-l);
+  padding:8px;z-index:90;display:none;max-height:300px;overflow:auto;
+}
+.search-result.on{display:block}
+.search-result a{display:block;padding:8px 10px;border-radius:8px;font-size:13.5px;color:var(--ink-2)}
+.search-result a:hover{background:var(--brand-soft);color:var(--brand-dark)}
+.search-result .empty{padding:12px 10px;font-size:13px;color:var(--ink-muted);line-height:1.6}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 380px at 82% -10%,rgba(181,49,47,.13),transparent 65%),
+    radial-gradient(700px 300px at 8% 110%,rgba(31,111,102,.10),transparent 60%),
+    linear-gradient(180deg,#fffdfa,#f7f2ec);
+  border-bottom:1px solid var(--line-soft);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;
+  padding:52px 0 58px;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);
+  padding:5px 13px;border-radius:20px;font-size:13px;color:var(--brand-dark);
+  box-shadow:var(--shadow-s);font-weight:600;
+}
+.hero-tag .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px rgba(31,111,102,.18)}
+.hero h1{
+  font-size:clamp(30px,4.6vw,52px);letter-spacing:1px;margin:16px 0 14px;
+  font-family:var(--font-serif);color:var(--ink);
+}
+.hero h1 .hl{color:var(--brand)}
+.hero h1::after{
+  content:"";display:block;width:74px;height:5px;border-radius:3px;margin-top:14px;
+  background:linear-gradient(90deg,var(--brand),var(--gold));
+}
+.hero-lead{font-size:16px;color:var(--ink-2);max-width:525px;line-height:1.85}
+.hero-lead b{color:var(--ink);font-weight:700}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 22px;border-radius:26px;font-size:15px;font-weight:600;
+  border:1px solid transparent;cursor:pointer;font-family:inherit;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 18px rgba(181,49,47,.28)}
+.btn-primary:hover{background:var(--brand-dark);transform:translateY(-2px)}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-dark);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:30px;margin-top:34px;flex-wrap:wrap}
+.hero-stats .num{font-size:26px;font-weight:800;color:var(--brand-dark);font-family:var(--font-serif);line-height:1.15}
+.hero-stats .lbl{font-size:12.5px;color:var(--ink-muted);letter-spacing:.5px}
+
+/* 首屏原创视觉 */
+.hero-art{position:relative;height:400px}
+.art-card{
+  position:absolute;border-radius:var(--radius-l);background:#fff;
+  border:1px solid var(--line);box-shadow:var(--shadow-l);overflow:hidden;
+}
+.art-main{right:0;top:16px;width:80%;height:300px;padding:20px}
+.art-main .bar{height:10px;border-radius:6px;background:var(--brand-soft);margin-bottom:11px}
+.art-main .bar.b2{width:72%;background:#f2ece4}
+.art-main .bar.b3{width:88%;background:#f2ece4}
+.art-main .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:16px}
+.art-main .mini-grid span{height:52px;border-radius:10px;background:linear-gradient(135deg,#f7e9e8,#f3eee7)}
+.art-main .mini-grid span:nth-child(2){background:linear-gradient(135deg,#e6f1ef,#f0f5f2)}
+.art-main .mini-grid span:nth-child(3){background:linear-gradient(135deg,#f4ecd9,#f8f3e7)}
+.art-badge{
+  position:absolute;left:0;bottom:26px;width:56%;padding:16px 18px;
+  border-radius:var(--radius);background:#fff;border:1px solid var(--line);
+  box-shadow:var(--shadow);z-index:2;
+}
+.art-badge .t{font-size:12px;color:var(--ink-muted);letter-spacing:1px}
+.art-badge .v{font-size:18px;font-weight:800;color:var(--brand-dark);margin-top:3px}
+.art-badge .v small{font-size:12px;color:var(--accent);font-weight:600;margin-left:6px}
+.art-badge .meter{height:7px;border-radius:4px;background:var(--line-soft);margin-top:10px;overflow:hidden}
+.art-badge .meter i{display:block;height:100%;width:76%;border-radius:4px;background:linear-gradient(90deg,var(--brand),var(--gold))}
+.art-chip{
+  position:absolute;left:14%;top:0;z-index:3;background:var(--accent);color:#fff;
+  font-size:12.5px;padding:6px 13px;border-radius:20px;font-weight:600;
+  box-shadow:0 6px 16px rgba(31,111,102,.3);
+}
+.art-ring{
+  position:absolute;right:-36px;bottom:-20px;width:150px;height:150px;border-radius:50%;
+  border:16px solid rgba(181,49,47,.09);z-index:0;
+}
+
+/* 主体布局 */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;padding:52px 0 20px}
+.side{position:sticky;top:calc(var(--stick-h) + 14px);align-self:start}
+.side-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px;box-shadow:var(--shadow-s);
+}
+.side-card + .side-card{margin-top:16px}
+.side-title{font-size:14px;color:var(--ink-muted);letter-spacing:1.5px;margin-bottom:10px;font-weight:600}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{
+  display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:8px;
+  font-size:14px;color:var(--ink-2);transition:background .16s,color .16s;
+}
+.side-nav a .idx{font-size:11.5px;color:var(--ink-muted);font-variant-numeric:tabular-nums;width:18px;flex:none}
+.side-nav a:hover{background:var(--brand-soft);color:var(--brand-dark)}
+.side-nav a.active{background:var(--brand-soft);color:var(--brand-dark);font-weight:600}
+.side-nav a.active .idx{color:var(--brand)}
+
+/* 板块通用 */
+.block{margin-bottom:var(--space-6)}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:20px;flex-wrap:wrap}
+.block-head h2{font-size:23px;letter-spacing:.4px;font-family:var(--font-serif);position:relative;padding-left:15px}
+.block-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:5px;width:5px;border-radius:3px;background:var(--brand)}
+.block-head .desc{font-size:13.5px;color:var(--ink-muted);max-width:430px;line-height:1.65}
+.block-head .more{font-size:13.5px;color:var(--brand-dark);font-weight:600;white-space:nowrap;border-bottom:1px solid rgba(181,49,47,.3);padding-bottom:1px}
+.block-head .more:hover{color:var(--brand)}
+
+/* 领域概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.ov-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.ov-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#dcd5cd}
+.ov-card h3{font-size:16px;margin-bottom:8px;display:flex;align-items:center;gap:9px}
+.ov-card h3 .k{
+  flex:none;width:26px;height:26px;border-radius:8px;background:var(--brand-soft);color:var(--brand-dark);
+  display:grid;place-items:center;font-size:12.5px;font-weight:800;
+}
+.ov-card p{font-size:14px;color:var(--ink-2);line-height:1.8}
+.ov-card .meta{margin-top:10px;font-size:12.5px;color:var(--ink-muted);display:flex;gap:14px;flex-wrap:wrap}
+.ov-card .meta b{color:var(--accent);font-weight:700}
+
+/* 精选推荐 - 非对称网格 */
+.feature-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-auto-rows:minmax(0,auto);gap:16px}
+.f-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;
+}
+.f-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.f-card.big{grid-row:span 2}
+.f-card .thumb{aspect-ratio:16/9;overflow:hidden;background:#eee}
+.f-card.big .thumb{aspect-ratio:16/10}
+.f-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.f-card:hover .thumb img{transform:scale(1.04)}
+.f-body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:7px;flex:1}
+.f-tag{align-self:flex-start;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:20px;background:var(--brand-soft);color:var(--brand-dark);letter-spacing:.3px}
+.f-tag.t2{background:var(--accent-soft);color:var(--accent)}
+.f-tag.t3{background:#f7f0dd;color:#8a6516}
+.f-card h3{font-size:15.5px;line-height:1.5}
+.f-card.big h3{font-size:19px}
+.f-card p{font-size:13.5px;color:var(--ink-2);line-height:1.7;flex:1}
+.f-foot{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--ink-muted);padding-top:6px;border-top:1px dashed var(--line-soft)}
+.f-foot .score{color:var(--brand-dark);font-weight:700}
+
+/* 最新更新：紧凑列表 */
+.update-list{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.up-item{display:grid;grid-template-columns:76px 1fr auto;gap:16px;padding:15px 20px;align-items:center;border-bottom:1px solid var(--line-soft)}
+.up-item:last-child{border-bottom:none}
+.up-item:hover{background:#fcfaf7}
+.up-date{font-size:12px;color:var(--ink-muted);line-height:1.5;text-align:center;border-right:1px solid var(--line-soft);padding-right:8px}
+.up-date b{display:block;font-size:17px;color:var(--ink);font-family:var(--font-serif);font-weight:800}
+.up-main h3{font-size:15px;margin-bottom:3px}
+.up-main p{font-size:13px;color:var(--ink-muted);line-height:1.6}
+.up-tag{font-size:11.5px;padding:3px 10px;border-radius:20px;background:var(--accent-soft);color:var(--accent);font-weight:600;white-space:nowrap}
+.up-tag.warn{background:#f7f0dd;color:#8a6516}
+
+/* 分类入口：标签索引 + 网格 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cat-item{
+  display:flex;flex-direction:column;gap:4px;background:#fff;border:1px solid var(--line);
+  border-radius:12px;padding:14px 15px;transition:transform .18s,box-shadow .18s,border-color .18s;
+}
+.cat-item:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--brand)}
+.cat-item .cn{font-size:14.5px;font-weight:700}
+.cat-item .cd{font-size:12px;color:var(--ink-muted)}
+.cat-item .cnum{font-size:11.5px;color:var(--accent);font-weight:600;margin-top:3px}
+.tag-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.tag-row a{background:#fff;border:1px solid var(--line);border-radius:20px;padding:5px 14px;font-size:13px;color:var(--ink-2);transition:.18s}
+.tag-row a:hover{background:var(--brand);border-color:var(--brand);color:#fff}
+
+/* 深度解析 */
+.article{background:#fff;border:1px solid var(--line);border-radius:var(--radius-l);padding:34px 38px;box-shadow:var(--shadow-s)}
+.article-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink-muted);border-bottom:1px solid var(--line-soft);padding-bottom:14px;margin-bottom:22px}
+.article-meta b{color:var(--brand-dark);font-weight:600}
+.article p{font-size:15px;color:var(--ink-2);line-height:1.95;margin-bottom:15px}
+.article p b{color:var(--ink);font-weight:700}
+.article h3{font-size:17px;margin:26px 0 11px;padding-left:12px;border-left:4px solid var(--gold);line-height:1.45}
+.verdict{
+  background:linear-gradient(180deg,#fff9f1,#fdf3e8);border:1px solid #f0e0c8;border-radius:12px;
+  padding:16px 19px;margin:18px 0;font-size:14.5px;color:#6b4a12;line-height:1.8;
+}
+.verdict b{color:#8a6516}
+.compare-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:16px 0;background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+.compare-table th,.compare-table td{padding:10px 13px;text-align:left;border-bottom:1px solid var(--line-soft);vertical-align:top}
+.compare-table thead th{background:#f7f2ec;color:var(--ink);font-size:13px;white-space:nowrap}
+.compare-table tbody tr:last-child td{border-bottom:none}
+.compare-table td:first-child{font-weight:600;color:var(--ink);white-space:nowrap}
+.compare-table .up{color:var(--accent);font-weight:700}
+.compare-table .down{color:var(--brand-dark);font-weight:700}
+.article blockquote{
+  margin:18px 0;padding:14px 20px;border-left:4px solid var(--brand);
+  background:var(--brand-soft);border-radius:0 10px 10px 0;font-size:14.5px;color:#7a2b28;line-height:1.8;
+}
+.article blockquote cite{display:block;font-size:12.5px;color:#a35b57;font-style:normal;margin-top:6px}
+
+/* 体验指南：编号步骤 */
+.steps{display:grid;gap:14px;counter-reset:step}
+.step{
+  display:grid;grid-template-columns:46px 1fr;gap:16px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px 20px;transition:box-shadow .2s;
+}
+.step:hover{box-shadow:var(--shadow-s)}
+.step .no{
+  width:46px;height:46px;border-radius:50%;background:var(--brand);color:#fff;
+  display:grid;place-items:center;font-size:19px;font-weight:800;font-family:var(--font-serif);
+}
+.step:nth-child(2) .no{background:var(--accent)}
+.step:nth-child(3) .no{background:var(--gold)}
+.step:nth-child(4) .no{background:#6b4f8a}
+.step h3{font-size:15.5px;margin-bottom:5px}
+.step p{font-size:13.8px;color:var(--ink-2);line-height:1.75}
+.step p em{font-style:normal;color:var(--brand-dark);font-weight:600}
+
+/* FAQ */
+.faq-list{display:grid;gap:11px}
+.faq-list details{
+  background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  transition:border-color .2s,box-shadow .2s;
+}
+.faq-list details[open]{border-color:var(--brand);box-shadow:var(--shadow-s)}
+.faq-list summary{
+  cursor:pointer;padding:15px 46px 15px 19px;font-size:14.8px;font-weight:600;color:var(--ink);
+  list-style:none;position:relative;line-height:1.6;
+}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{
+  content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);
+  font-size:20px;color:var(--brand);font-weight:400;line-height:1;
+}
+.faq-list details[open] summary::after{content:"–"}
+.faq-list summary:focus-visible{outline:2px solid var(--brand);outline-offset:-2px}
+.faq-body{padding:0 19px 16px;font-size:13.8px;color:var(--ink-2);line-height:1.8}
+.faq-body b{color:var(--ink)}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.cmt-head{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#fff;flex:none}
+.cmt-head .name{font-size:13.5px;font-weight:700}
+.cmt-head .when{font-size:11.5px;color:var(--ink-muted);margin-left:auto}
+.cmt p{font-size:13.6px;color:var(--ink-2);line-height:1.75}
+.cmt p b{color:var(--ink)}
+.cmt-ref{
+  display:inline-block;margin-top:9px;font-size:12px;color:var(--brand-dark);
+  background:var(--brand-soft);padding:2px 9px;border-radius:6px;
+}
+.stars{color:var(--gold);font-size:12px;letter-spacing:1px}
+
+/* 相关资讯：双栏紧凑 */
+.news-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:6px 20px}
+.news-item{padding:14px 0;border-bottom:1px solid var(--line-soft);display:flex;gap:12px;align-items:flex-start}
+.news-item:nth-last-child(-n+2){border-bottom:none}
+.news-dot{width:7px;height:7px;border-radius:50%;background:var(--brand);flex:none;margin-top:8px}
+.news-item h3{font-size:14px;font-weight:600;line-height:1.55;margin-bottom:3px}
+.news-item p{font-size:12.5px;color:var(--ink-muted);line-height:1.6}
+
+/* 相关推荐：标签 */
+.rec-cloud{display:flex;flex-wrap:wrap;gap:10px}
+.rec-cloud a{
+  background:#fff;border:1px solid var(--line);border-radius:24px;padding:8px 17px;
+  font-size:13.5px;color:var(--ink-2);display:inline-flex;align-items:center;gap:7px;transition:.18s;
+}
+.rec-cloud a:hover{background:var(--brand-dark);border-color:var(--brand-dark);color:#fff;transform:translateY(-2px)}
+.rec-cloud a span{font-size:11px;opacity:.6}
+
+/* 榜单 / 时间线 */
+.rank-list{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank-item{display:grid;grid-template-columns:40px 1fr auto;gap:14px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line-soft)}
+.rank-item:last-child{border-bottom:none}
+.rank-no{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font-weight:800;font-size:13.5px;background:#f2ece4;color:var(--ink-2);font-family:var(--font-serif)}
+.rank-item:nth-child(1) .rank-no{background:var(--brand);color:#fff}
+.rank-item:nth-child(2) .rank-no{background:#d9853f;color:#fff}
+.rank-item:nth-child(3) .rank-no{background:#c9a15a;color:#fff}
+.rank-item h3{font-size:14.5px;margin-bottom:2px}
+.rank-item p{font-size:12.5px;color:var(--ink-muted)}
+.rank-score{font-size:14px;font-weight:800;color:var(--brand-dark);font-variant-numeric:tabular-nums}
+.rank-score small{display:block;font-size:10.5px;color:var(--ink-muted);font-weight:400;text-align:right}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:22px;border-left:2px solid var(--line)}
+.tl-item{position:relative;padding:0 0 22px 20px}
+.tl-item::before{content:"";position:absolute;left:-31px;top:5px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid var(--brand)}
+.tl-item:nth-child(2)::before{border-color:var(--accent)}
+.tl-item:nth-child(3)::before{border-color:var(--gold)}
+.tl-date{font-size:12px;color:var(--ink-muted);letter-spacing:.5px;margin-bottom:3px}
+.tl-item h3{font-size:14.5px;margin-bottom:4px}
+.tl-item p{font-size:13.2px;color:var(--ink-2);line-height:1.7}
+
+/* 页脚 */
+.site-footer{background:#23252d;color:#c9ccd5;margin-top:30px;padding:48px 0 26px;font-size:13.5px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer-brand .brand-name{color:#fff;font-size:18px}
+.footer-pos{color:#9ba0af;line-height:1.8;font-size:13px;max-width:300px}
+.footer-col h4{font-size:13.5px;color:#fff;margin-bottom:12px;letter-spacing:.5px}
+.footer-col a{display:block;color:#a6abb9;padding:4px 0;font-size:13px;transition:color .18s}
+.footer-col a:hover{color:#fff}
+.footer-note{
+  margin-top:34px;padding-top:18px;border-top:1px solid #34373f;display:flex;flex-wrap:wrap;
+  gap:10px 22px;justify-content:space-between;color:#878c9b;font-size:12.3px;line-height:1.7;
+}
+.footer-note a{text-decoration:underline;text-underline-offset:3px}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:none;cursor:pointer;display:grid;place-items:center;
+  box-shadow:0 8px 24px rgba(181,49,47,.4);opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:.25s;z-index:70;font-family:inherit;
+}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.to-top:hover{background:var(--brand-dark)}
+
+/* 响应式 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;margin-top:6px;order:2}
+  .side-card{box-shadow:none}
+  .side-card + .side-card{margin-top:12px}
+  .hero-grid{grid-template-columns:1fr;gap:26px;padding:38px 0 44px}
+  .hero-art{height:280px;max-width:520px}
+  .art-main{height:210px;padding:15px}
+  .art-main .mini-grid span{height:38px}
+  .feature-grid{grid-template-columns:1fr 1fr}
+  .f-card.big{grid-row:auto;grid-column:span 2}
+  .cat-grid{grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .nav-main{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:10px 18px;flex-direction:column;gap:2px;margin:0}
+  .nav-main.open{display:flex}
+  .header-inner{position:relative;flex-wrap:wrap}
+  .menu-btn{display:inline-flex;order:3}
+  .header-act{margin-left:auto}
+  .nav-main a{padding:9px 12px;border-radius:8px}
+}
+@media (max-width:680px){
+  body{font-size:15px}
+  .wrap{padding:0 16px}
+  .hero-stats{gap:18px}
+  .hero-stats .num{font-size:22px}
+  .feature-grid{grid-template-columns:1fr}
+  .f-card.big{grid-column:auto}
+  .overview-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .comment-grid{grid-template-columns:1fr}
+  .news-list{grid-template-columns:1fr}
+  .news-item:nth-last-child(2){border-bottom:1px solid var(--line-soft)}
+  .up-item{grid-template-columns:56px 1fr;gap:12px;padding:13px 15px}
+  .up-tag{grid-column:2;justify-self:start;margin-top:-4px}
+  .article{padding:22px 18px}
+  .article h3{font-size:16px}
+  .compare-table{font-size:12.5px;display:block;overflow-x:auto;white-space:nowrap}
+  .step{grid-template-columns:38px 1fr;gap:12px;padding:15px}
+  .step .no{width:38px;height:38px;font-size:16px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
+  .search-box input{width:138px}
+  .search-box input:focus{width:160px}
+  .to-top{right:14px;bottom:18px}
+  .block-head h2{font-size:20px}
+  .rec-cloud a{padding:7px 13px;font-size:13px}
+  .rank-item{padding:12px 14px;grid-template-columns:32px 1fr auto;gap:10px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-top">
+  <div class="notice" id="notice">
+    <div class="wrap">
+      <b>公告</b>
+      <span class="dot"></span>
+      <span>11 月 7 日产区周报已上线：新增 3 组「干逼精」工艺对照，第 12 号条目评分由 8.6 调整为 8.9</span>
+      <a href="/#latest">查看更新记录</a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/#top" aria-label="返回首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="产区图形标志">
+          <rect width="64" height="64" rx="14" fill="#b5312f"/>
+          <path d="M14 46V22h7l5.5 11L32 22h7v24h-6V32l-4.5 8h-3.5L20.5 32v14z" fill="#fff"/>
+          <circle cx="47" cy="27" r="6" fill="#ffd76a"/>
+          <rect x="41" y="37" width="10" height="7" rx="2" fill="#fff" opacity=".85"/>
+        </svg>
+        <span>
+          <span class="brand-name">91干逼精产区</span>
+          <span class="brand-sub">精品内容产区索引</span>
+        </span>
+      </a>
+      <nav class="nav-main" id="navMain" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#rank">产区榜单</a>
+      </nav>
+      <div class="header-act">
+        <div class="search-box">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          <input id="searchInput" type="search" placeholder="搜索条目、工艺、分类" aria-label="站内搜索" autocomplete="off">
+          <div class="search-result" id="searchResult" role="listbox" aria-label="搜索结果"></div>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navMain">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          菜单
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="hero-tag"><span class="pulse"></span>本周新增 14 条工艺对照 · 11 月 7 日校对</span>
+        <h1><span class="hl">91干逼精</span>产区导航</h1>
+        <p class="hero-lead">把 91 系精品内容按<b>产区批次、工艺路线、评分档位</b>重新归档。收录 128 个产区条目、36 组干逼精工序对照与 9 份月度质检摘要，默认按 11 月 7 日数据展示。适合查条目、比参数、看他人怎么选。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#featured">进入精选推荐
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="/#guide">查看体验指南</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="num">128</div><div class="lbl">产区条目</div></div>
+          <div><div class="num">36</div><div class="lbl">工序对照</div></div>
+          <div><div class="num">9</div><div class="lbl">月度质检摘要</div></div>
+          <div><div class="num">8.9</div><div class="lbl">最高综合分</div></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-ring"></div>
+        <div class="art-card art-main">
+          <div class="bar" style="width:55%"></div>
+          <div class="bar b2"></div>
+          <div class="bar b3"></div>
+          <div class="bar b2" style="width:62%"></div>
+          <div class="mini-grid">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="art-chip">产区质检 11/07 通过</div>
+        <div class="art-badge">
+          <div class="t">干逼精工序完成度</div>
+          <div class="v">76% <small>较上月 +5%</small></div>
+          <div class="meter"><i></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <div class="content">
+
+      <!-- 领域概览 -->
+      <section class="block section" id="overview">
+        <div class="block-head">
+          <h2>领域概览：产区如何划分</h2>
+          <p class="desc">按产区批次、工艺路线与质检口径三件事拆开说，先看结构再选条目。</p>
+        </div>
+        <div class="overview-grid">
+          <article class="ov-card">
+            <h3><span class="k">A</span>产区批次与来源</h3>
+            <p>现有 128 个条目里，按来源分成华东、华南、西南三类批次，每批标注入库日期与批号。11 月 7 日校对时新增 3 个批次，批号前缀为 D-1107。</p>
+            <div class="meta"><span>批次总数 <b>24</b></span><span>最近校对 <b>11-07</b></span></div>
+          </article>
+          <article class="ov-card">
+            <h3><span class="k">B</span>干逼精工艺路线</h3>
+            <p>工序对照目前分「单段直压」「双段回温」「低温慢走」三条路线。单段直压占条目 41%，双段回温 36%，低温慢走 23%，路线差异直接影响评分区间。</p>
+            <div class="meta"><span>路线 <b>3 条</b></span><span>对照组 <b>36 组</b></span></div>
+          </article>
+          <article class="ov-card">
+            <h3><span class="k">C</span>评分与质检口径</h3>
+            <p>评分由工艺完成度、批次稳定性、复检一致性三项加权，满分 10 分。8.5 分以上进入精选，7.0 至 8.4 分进入常规区，低于 7.0 分只保留工艺记录。</p>
+            <div class="meta"><span>精选 <b>29 条</b></span><span>常规 <b>76 条</b></span></div>
+          </article>
+          <article class="ov-card">
+            <h3><span class="k">D</span>更新与复检节奏</h3>
+            <p>每周二、周五各校对一次条目标签，每月 5 日前发布上月质检摘要。11 月 7 日的周报显示，本轮 14 条更新里有 9 条属于参数修订。</p>
+            <div class="meta"><span>周更新 <b>2 次</b></span><span>质检 <b>月度</b></span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 精选推荐 -->
+      <section class="block section" id="featured">
+        <div class="block-head">
+          <h2>精选内容推荐</h2>
+          <p class="desc">从 29 条 8.5 分以上条目里挑出 6 条，覆盖三条工艺路线。</p>
+          <a class="more" href="/#rank">看完整榜单</a>
+        </div>
+        <div class="feature-grid">
+          <article class="f-card big">
+            <div class="thumb"><img src="https://picsum.photos/seed/91gongbi-detail/720/420" width="720" height="420" loading="lazy" alt="双段回温工艺的批次对照摆拍"></div>
+            <div class="f-body">
+              <span class="f-tag">双段回温</span>
+              <h3>D-1029 批次：双段回温把合格率从 78% 提到 91%</h3>
+              <p>该批次在 10 月 29 日完成复检，首段回温 4 小时、次段 2.5 小时，成品一致性评分 9.1。对比同产区单段直压的 8.3 分，差距主要在次段温度曲线的稳定性上。</p>
+              <div class="f-foot"><span>10 月 29 日入库</span><span class="score">9.1 分</span></div>
+            </div>
+          </article>
+          <article class="f-card">
+            <div class="thumb"><img src="https://picsum.photos/seed/91gongbi-lowtemp/640/360" width="640" height="360" loading="lazy" alt="低温慢走工艺的温度记录面板"></div>
+            <div class="f-body">
+              <span class="f-tag t2">低温慢走</span>
+              <h3>低温慢走 18 小时记录</h3>
+              <p>西南批次 D-1103 的全程温差控制在 1.2℃以内，质检评分 8.8。</p>
+              <div class="f-foot"><span>11 月 3 日</span><span class="score">8.8 分</span></div>
+            </div>
+          </article>
+          <article class="f-card">
+            <div class="thumb"><img src="https://picsum.photos/seed/91gongbi-single/640/360" width="640" height="360" loading="lazy" alt="单段直压批次的成品分层图"></div>
+            <div class="f-body">
+              <span class="f-tag t3">单段直压</span>
+              <h3>单段直压的复检一致性</h3>
+              <p>华东 D-1015 批次三次复检极差 0.3 分，是本月最稳的单段样本。</p>
+              <div class="f-foot"><span>10 月 15 日</span><span class="score">8.7 分</span></div>
+            </div>
+          </article>
+          <article class="f-card">
+            <div class="thumb"><img src="https://picsum.photos/seed/91gongbi-check/640/360" width="640" height="360" loading="lazy" alt="质检台与参数记录表"></div>
+            <div class="f-body">
+              <span class="f-tag">质检摘要</span>
+              <h3>10 月质检：14 项异常与处理</h3>
+              <p>集中在温度漂移与回温时长不足，9 项已修订参数。</p>
+              <div class="f-foot"><span>11 月 5 日</span><span class="score">摘要</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="block section" id="latest">
+        <div class="block-head">
+          <h2>最新更新</h2>
+          <p class="desc">11 月 1 日至 11 月 7 日的条目修订，按日倒序。</p>
+        </div>
+        <div class="update-list">
+          <div class="up-item">
+            <div class="up-date"><b>11-07</b>今天</div>
+            <div class="up-main">
+              <h3>第 12 号条目综合分由 8.6 调整为 8.9</h3>
+              <p>原因是 11 月 6 日第二次复检中双段回温曲线重合度提升，参数页已同步。</p>
+            </div>
+            <span class="up-tag">评分修订</span>
+          </div>
+          <div class="up-item">
+            <div class="up-date"><b>11-06</b>昨天</div>
+            <div class="up-main">
+              <h3>新增 D-1106 批次，归属华南双段回温组</h3>
+              <p>入库时标注温度 23℃、湿度 58%，首轮质检评分 8.4，等待第二轮回检。</p>
+            </div>
+            <span class="up-tag">新条目</span>
+          </div>
+          <div class="up-item">
+            <div class="up-date"><b>11-04</b>本周</div>
+            <div class="up-main">
+              <h3>「低温慢走」路线说明补入温差控制口径</h3>
+              <p>明确全程温差以批次内最高与最低记录之差计算，替换原先的抽样估算法。</p>
+            </div>
+            <span class="up-tag warn">规则变更</span>
+          </div>
+          <div class="up-item">
+            <div class="up-date"><b>11-02</b>本周</div>
+            <div class="up-main">
+              <h3>10 月质检摘要发布，共记录 14 项异常</h3>
+              <p>其中 9 项为参数修订，3 项为批次来源标注更正，2 项待下一轮复检确认。</p>
+            </div>
+            <span class="up-tag">质检</span>
+          </div>
+          <div class="up-item">
+            <div class="up-date"><b>11-01</b>本周</div>
+            <div class="up-main">
+              <h3>产区分类页改为按工艺路线排序</h3>
+              <p>原先按入库时间排序，现改为路线分组，单段直压、双段回温、低温慢走各成一栏。</p>
+            </div>
+            <span class="up-tag warn">结构变更</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="block section" id="category">
+        <div class="block-head">
+          <h2>分类入口</h2>
+          <p class="desc">按工艺、批次来源和用途三套口径归类，点进对应页签。</p>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#featured"><span class="cn">双段回温产区</span><span class="cd">36 组对照 · 合格率 91%</span><span class="cnum">13 条</span></a>
+          <a class="cat-item" href="/#featured"><span class="cn">单段直压条目</span><span class="cd">入选 41% 条目</span><span class="cnum">52 条</span></a>
+          <a class="cat-item" href="/#featured"><span class="cn">低温慢走批次</span><span class="cd">温差 ≤1.2℃</span><span class="cnum">29 条</span></a>
+          <a class="cat-item" href="/#latest"><span class="cn">本周新增批次</span><span class="cd">11-01 至 11-07</span><span class="cnum">14 条</span></a>
+          <a class="cat-item" href="/#rank"><span class="cn">8.5 分以上精选</span><span class="cd">按综合分排序</span><span class="cnum">29 条</span></a>
+          <a class="cat-item" href="/#guide"><span class="cn">新手指引条目</span><span class="cd">4 步走完流程</span><span class="cnum">6 条</span></a>
+          <a class="cat-item" href="/#deep"><span class="cn">工艺参数对照</span><span class="cd">温度 / 时长 / 回温</span><span class="cnum">36 组</span></a>
+          <a class="cat-item" href="/#news"><span class="cn">月度质检摘要</span><span class="cd">10 月共 14 项异常</span><span class="cnum">9 份</span></a>
+        </div>
+        <div class="tag-row">
+          <a href="/#latest">11 月批次更新</a>
+          <a href="/#deep">回温时长怎么算</a>
+          <a href="/#rank">综合分 9 分以上条目</a>
+          <a href="/#faq">复检不一致怎么办</a>
+          <a href="/#guide">首次查看产区参数</a>
+          <a href="/#news">质检异常处理记录</a>
+          <a href="/#rank">华南双段回温组</a>
+          <a href="/#deep">单段直压温度曲线</a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="block section" id="deep">
+        <div class="block-head">
+          <h2>深度解析：双段回温真的比单段直压稳定吗</h2>
+          <p class="desc">把 36 组对照按工艺拆开，用 3 次复检数据说话。</p>
+        </div>
+        <article class="article">
+          <div class="article-meta">
+            <span>校对 <b>2026-11-07</b></span>
+            <span>数据样本 <b>36 组</b></span>
+            <span>复检轮次 <b>3 轮</b></span>
+            <span>涉及批次 <b>24 个</b></span>
+          </div>
+
+          <p>先给结论：在 91 系精品内容里，双段回温的稳定性优势主要来自第二段回温，而不是第一段。把 36 组对照按路线拆开，第二段回温时长占全程 30% 以上的 19 组，三轮复检极差平均为 <b>0.28 分</b>；第二段低于 30% 的 17 组，极差平均 <b>0.47 分</b>。差距不大，但在批次横向比较时足够看出方向。</p>
+
+          <h3>时间线与样本：10 月 15 日至 11 月 6 日发生了什么</h3>
+          <p>10 月 15 日华东 D-1015 批次完成首轮复检，极差 0.3 分；10 月 29 日华南 D-1029 批次改走双段回温，极差降到 0.22 分；11 月 3 日西南 D-1103 批次用低温慢走，温差控制在 1.2℃，但极差为 0.51 分。11 月 6 日第 12 号条目第二次复检，曲线重合度从 83% 提到 91%，综合分随即由 8.6 调整为 8.9。这条调整记录在更新列表里可以核对。</p>
+
+          <div class="compare-table">
+            <table>
+              <caption class="sr-only" style="position:absolute;left:-9999px">双段回温与单段直压的复检稳定性对照</caption>
+              <thead>
+                <tr><th>对照项</th><th>双段回温（19 组）</th><th>单段直压（17 组）</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>三轮复检极差均值</td><td class="up">0.28 分</td><td class="down">0.47 分</td></tr>
+                <tr><td>合格率</td><td class="up">91%</td><td>78%</td></tr>
+                <tr><td>全程时长中位数</td><td>6.5 小时</td><td>4.0 小时</td></tr>
+                <tr><td>温差上限</td><td>1.8℃</td><td>2.4℃</td></tr>
+                <tr><td>二次修订比例</td><td>16%</td><td>29%</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="verdict">
+            <b>可引用判断：</b>双段回温的稳定优势成立的前提是第二段时长占比 ≥30%。低于这个比例时，19 组样本里只有 6 组把极差压到 0.3 分以下，与单段直压没有统计意义上的差别。把「双段」当成稳定保证，是把工艺标签当成了参数本身。
+          </div>
+
+          <h3>说法差异：两种口径各算各的</h3>
+          <p>产区派认为只要走双段流程就该按工艺分组评分；参数派坚持按实际温度曲线归档，理由是同叫双段，第二段温度 41℃ 与 45℃ 的记录被并在一起比较，会掩盖差异。11 月 4 日的规则说明采纳了后者，低温慢走的温差改成按批次内最高与最低记录之差计算，原先的抽样估算法被替换。这个改动直接让 3 个批次的评分下调 0.1 至 0.2 分。</p>
+
+          <blockquote>
+            「第 12 号条目 11 月 6 日第二次复检，曲线重合度 91%，比首次的 83% 高 8 个百分点，评分才跟着动的。」
+            <cite>—— 11 月 7 日产区周报，复检记录备注</cite>
+          </blockquote>
+
+          <h3>可核对的拆解：把判断拆成 4 个可查项</h3>
+          <ol style="padding-left:20px;list-style:decimal;color:var(--ink-2);font-size:14.5px;line-height:1.95;margin-bottom:15px">
+            <li>先查第二段占全程时长比例，低于 30% 的样本单独分组。</li>
+            <li>再看三轮复检极差，0.3 分以上视为不稳定。</li>
+            <li>然后核对温差上限，超过 2.0℃ 的批次不进精选。</li>
+            <li>最后看二次修订比例，高于 25% 说明参数尚未定型。</li>
+          </ol>
+          <p>按这 4 项筛一遍，36 组里真正稳的只有 11 组，集中在华南 9 月后的批次。华东早期样本多数卡在第 2 项，西南卡在第 3 项。需要提醒的是，这套拆解只覆盖 2026 年 10 月 15 日至 11 月 6 日的复检记录，更早批次没做同样口径的复核，不能直接套用。</p>
+        </article>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="block section" id="guide">
+        <div class="block-head">
+          <h2>体验指南</h2>
+          <p class="desc">第一次查产区参数，按这四步走，不用整页浏览。</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="no">1</div>
+            <div>
+              <h3>先定工艺路线</h3>
+              <p>先看条目属于单段直压、双段回温还是低温慢走。路线不同，需要关注的参数完全不同——<em>双段回温看第二段时长占比，单段直压看全程温差</em>。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="no">2</div>
+            <div>
+              <h3>核对批次与复检轮次</h3>
+              <p>每条目都标了批号前缀和复检轮次。只做过一轮复检的条目，评分可参考但不宜直接比较；<em>两轮以上且极差 0.3 分以内的，才算稳定样本</em>。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="no">3</div>
+            <div>
+              <h3>比对同产区组的均值</h3>
+              <p>把目标条目放回同产区组看位置。华南双段回温组均值 8.7 分，华东单段组 8.2 分，<em>低于组均值 0.5 分以上的条目要重点看修订记录</em>。</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="no">4</div>
+            <div>
+              <h3>查最新一次修订时间</h3>
+              <p>修订日期越近，参数越可能还在调整。11 月 7 日前后有修订的 14 条，建议对照更新列表里的说明再看一遍，<em>尤其是评分被上调的条目</em>。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="block section" id="faq">
+        <div class="block-head">
+          <h2>常见问题</h2>
+          <p class="desc">按问得最多的顺序排，答案以 11 月 7 日记录为准。</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>双段回温的第二段一般要多久？</summary>
+            <div class="faq-body">第二段回温时长通常占全程 30% 至 45%，以 D-1029 批次为例，全程 6.5 小时里第二段占 2.5 小时，约 38%。低于 30% 时稳定性优势不明显，36 组对照里有 6 组是这种情况，复检极差都在 0.3 分以上。</div>
+          </details>
+          <details>
+            <summary>综合分 8.9 和 8.6 差在哪里？</summary>
+            <div class="faq-body">第 12 号条目的调整来自 11 月 6 日第二次复检，双段回温曲线重合度从 83% 提到 91%，工艺完成度一项加 0.3 分。8.6 与 8.9 不是整体水平跳变，而是单项参数变动后的重算结果。</div>
+          </details>
+          <details>
+            <summary>低温慢走的温差按什么口径算？</summary>
+            <div class="faq-body">11 月 4 日起按批次内最高与最低记录之差计算，替换了原先的抽样估算法。西南 D-1103 批次按新口径为 1.2℃，按旧口径估算是 0.9℃，两部分批次的评分因此下调了 0.1 至 0.2 分。</div>
+          </details>
+          <details>
+            <summary>单段直压为什么合格率偏低？</summary>
+            <div class="faq-body">17 组单段样本合格率 78%，比双段回温低 13 个百分点。主要差在全程温差，单段样本上限 2.4℃，双段样本 1.8℃。温差大的批次在第二轮复检里更容易被降分，二次修订比例 29% 也高于双段的 16%。</div>
+          </details>
+          <details>
+            <summary>只做过一轮复检的条目能信吗？</summary>
+            <div class="faq-body">可以作为参考，但不建议直接和两轮以上样本比高低。一轮复检只能说明单次结果，无法看出波动。10 月 15 日之后的条目普遍完成了第二轮，之前入库的还有 7 条只做了一轮，评分旁边会标「待复检」。</div>
+          </details>
+          <details>
+            <summary>月度质检摘要里 14 项异常都是什么问题？</summary>
+            <div class="faq-body">9 项为参数修订，主要是回温时长不足和温度漂移；3 项为批次来源标注更正，批号前缀写错；2 项待下一轮复检确认。摘要按问题类型分组，不是按条目编号排列。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="block section" id="comments">
+        <div class="block-head">
+          <h2>用户评论</h2>
+          <p class="desc">来自条目页的留言，按时间排列，保留原话语气。</p>
+        </div>
+        <div class="comment-grid">
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#b5312f">林</span>
+              <span class="name">林舟</span>
+              <span class="when">11-07 09:42</span>
+            </div>
+            <p>第 12 号条目从 8.6 调到 8.9 我认，11 月 6 日那次复检的曲线重合度确实上来了。<b>但只加在工艺完成度一项</b>，稳定性没动，看着有点怪。</p>
+            <span class="cmt-ref">指向条目：第 12 号</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#1f6f66">周</span>
+              <span class="name">周牧</span>
+              <span class="when">11-06 21:15</span>
+            </div>
+            <p><b>D-1029 批次</b>第二段 2.5 小时这个数我复现过，全程 6.5 小时也差不多。就是温差 1.8℃ 有点贴上限，再高一点就出精选了。</p>
+            <span class="cmt-ref">指向条目：D-1029 批次</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#8a6516">陈</span>
+              <span class="name">陈见山</span>
+              <span class="when">11-06 14:03</span>
+            </div>
+            <p>11 月 4 日改温差口径之后，<b>低温慢走那三条评分集体往下</b>，说明之前抽样估算确实偏乐观。这个改法我支持，早该这么算。</p>
+            <span class="cmt-ref">指向条目：低温慢走分类</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#6b4f8a">吴</span>
+              <span class="name">吴一鸣</span>
+              <span class="when">11-05 19:37</span>
+            </div>
+            <p><b>单段直压</b>被写成「合格率低」有点冤。华东 D-1015 三次复检极差 0.3 分，比不少双段还稳。总体 78% 是被早期批次拖的。</p>
+            <span class="cmt-ref">指向条目：D-1015 批次</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#4a4e5a">何</span>
+              <span class="name">何雪</span>
+              <span class="when">11-04 11:22</span>
+            </div>
+            <p>体验指南四步里第三步挺实用，把目标条目放回组里比。之前只看单项分数，<b>根本不知道 8.4 在华南是偏低</b>。</p>
+            <span class="cmt-ref">指向栏目：体验指南</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-head">
+              <span class="avatar" style="background:#b5312f">郑</span>
+              <span class="name">郑迟</span>
+              <span class="when">11-03 22:58</span>
+            </div>
+            <p>说实话这个分区还是有点绕。<b>D-1106 归到华南双段我不太理解</b>，入库才 8.4 分，第二轮回检都没做，先标精选待定更合适吧。</p>
+            <span class="cmt-ref">指向条目：D-1106 批次</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="block section" id="news">
+        <div class="block-head">
+          <h2>相关资讯</h2>
+          <p class="desc">产区规则、质检和批次记录里的短讯。</p>
+        </div>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-dot"></span>
+            <div>
+              <h3>第 12 号条目重算为 8.9 分</h3>
+              <p>11 月 6 日二次复检，曲线重合度 91%，工艺完成度加 0.3 分。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-dot" style="background:#1f6f66"></span>
+            <div>
+              <h3>低温慢走温差口径改为极差制</h3>
+              <p>11 月 4 日生效，抽样估算法停用，3 个批次评分下调。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-dot" style="background:#8a6516"></span>
+            <div>
+              <h3>10 月质检摘要：14 项异常</h3>
+              <p>9 项参数修订，3 项来源标注更正，2 项待复检确认。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-dot"></span>
+            <div>
+              <h3>D-1106 批次入库华南双段回温组</h3>
+              <p>温度 23℃、湿度 58%，首轮质检 8.4 分，待第二轮回检。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-dot" style="background:#6b4f8a"></span>
+            <div>
+              <h3>分类页改按工艺路线排序</h3>
+              <p>11 月 1 日调整，单段直压、双段回温、低温慢走各成一栏。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-dot" style="background:#1f6f66"></span>
+            <div>
+              <h3>单段直压复检一致性样本更新</h3>
+              <p>D-1015 三次复检极差 0.3 分，为本月最稳单段样本。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="block section" id="recommend">
+        <div class="block-head">
+          <h2>相关推荐</h2>
+          <p class="desc">按查找频率排的标签，点开直达对应板块。</p>
+        </div>
+        <div class="rec-cloud">
+          <a href="/#featured">双段回温产区<span>13</span></a>
+          <a href="/#rank">8.5 分以上精选条目<span>29</span></a>
+          <a href="/#deep">回温时长占比怎么算<span>36</span></a>
+          <a href="/#category">单段直压批次<span>52</span></a>
+          <a href="/#latest">11 月批次更新记录<span>14</span></a>
+          <a href="/#deep">低温慢走温差极差<span>29</span></a>
+          <a href="/#faq">复检极差 0.3 分标准<span>6</span></a>
+          <a href="/#rank">华南双段回温组均值<span>19</span></a>
+          <a href="/#news">月度质检异常清单<span>9</span></a>
+          <a href="/#guide">首次查产区参数四步<span>4</span></a>
+        </div>
+      </section>
+
+      <!-- 榜单 + 时间线 -->
+      <section class="block section" id="rank">
+        <div class="block-head">
+          <h2>产区可信度分层榜单</h2>
+          <p class="desc">按复检轮次与极差分层，不是单纯按分数排。</p>
+        </div>
+        <div class="rank-list">
+          <div class="rank-item">
+            <span class="rank-no">1</span>
+            <div><h3>D-1029 双段回温批次</h3><p>两轮复检 · 极差 0.22 分 · 华南组</p></div>
+            <div class="rank-score">9.1<small>综合分</small></div>
+          </div>
+          <div class="rank-item">
+            <span class="rank-no">2</span>
+            <div><h3>D-1103 低温慢走批次</h3><p>两轮复检 · 温差 1.2℃ · 西南组</p></div>
+            <div class="rank-score">8.8<small>综合分</small></div>
+          </div>
+          <div class="rank-item">
+            <span class="rank-no">3</span>
+            <div><h3>第 12 号条目</h3><p>两轮复检 · 重合度 91% · 华南组</p></div>
+            <div class="rank-score">8.9<small>综合分</small></div>
+          </div>
+          <div class="rank-item">
+            <span class="rank-no">4</span>
+            <div><h3>D-1015 单段直压批次</h3><p>三轮复检 · 极差 0.3 分 · 华东组</p></div>
+            <div class="rank-score">8.7<small>综合分</small></div>
+          </div>
+          <div class="rank-item">
+            <span class="rank-no">5</span>
+            <div><h3>D-1106 待复检批次</h3><p>一轮复检 · 评分待定 · 华南组</p></div>
+            <div class="rank-score">8.4<small>暂列</small></div>
+          </div>
+        </div>
+
+        <div style="margin-top:26px">
+          <h3 style="font-size:16px;margin-bottom:14px;padding-left:12px;border-left:4px solid var(--accent)">近三周批次时间线</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-date">11 月 7 日 · 今天</div>
+              <h3>第 12 号条目评分上调至 8.9</h3>
+              <p>依据 11 月 6 日第二次复检曲线重合度 91%，工艺完成度加 0.3 分。</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date">11 月 4 日 · 本周</div>
+              <h3>低温慢走温差改为极差制</h3>
+              <p>抽样估算法停用，3 个批次评分下调 0.1 至 0.2 分，规则页同步更新。</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date">10 月 29 日</div>
+              <h3>D-1029 批次完成两轮复检</h3>
+              <p>首段回温 4 小时、次段 2.5 小时，合格率 91%，综合分 9.1。</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date">10 月 15 日</div>
+              <h3>D-1015 批次三轮复检结束</h3>
+              <p>极差 0.3 分，成为本月单段直压最稳样本，综合分 8.7。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="侧栏导航">
+      <nav class="side-card">
+        <div class="side-title">栏目导航</div>
+        <div class="side-nav" id="sideNav">
+          <a href="/#overview"><span class="idx">01</span>领域概览</a>
+          <a href="/#featured"><span class="idx">02</span>精选推荐</a>
+          <a href="/#latest"><span class="idx">03</span>最新更新</a>
+          <a href="/#category"><span class="idx">04</span>分类入口</a>
+          <a href="/#deep"><span class="idx">05</span>深度解析</a>
+          <a href="/#guide"><span class="idx">06</span>体验指南</a>
+          <a href="/#faq"><span class="idx">07</span>常见问题</a>
+          <a href="/#comments"><span class="idx">08</span>用户评论</a>
+          <a href="/#news"><span class="idx">09</span>相关资讯</a>
+          <a href="/#recommend"><span class="idx">10</span>相关推荐</a>
+          <a href="/#rank"><span class="idx">11</span>产区榜单</a>
+        </div>
+      </nav>
+      <div class="side-card">
+        <div class="side-title">本周数据</div>
+        <p style="font-size:13.5px;color:var(--ink-2);line-height:1.8">11 月 1 日至 7 日，共 14 条条目修订，其中 9 条为参数调整，3 条为来源标注更正，2 条待下一轮复检。新增 D-1106 批次，暂列 8.4 分。</p>
+      </div>
+      <div class="side-card" style="background:linear-gradient(160deg,#fdf3e8,#fff);border-color:#f0e0c8">
+        <div class="side-title" style="color:#8a6516">评分口径提醒</div>
+        <p style="font-size:13.5px;color:#6b4a12;line-height:1.8">综合分含工艺完成度、批次稳定性、复检一致性三项，单项最高 10 分。8.5 分以上进精选，7.0 至 8.4 分为常规，低于 7.0 分仅保留记录。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-label="页脚图形标志">
+            <rect width="64" height="64" rx="14" fill="#b5312f"/>
+            <path d="M14 46V22h7l5.5 11L32 22h7v24h-6V32l-4.5 8h-3.5L20.5 32v14z" fill="#fff"/>
+            <circle cx="47" cy="27" r="6" fill="#ffd76a"/>
+          </svg>
+          <span class="brand-name">91干逼精产区</span>
+        </div>
+        <p class="footer-pos">按工艺路线与批次来源整理精品内容条目，供查参数、看复检记录、比组均值使用。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容板块</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#deep">深度解析</a>
+      </div>
+      <div class="footer-col">
+        <h4>分类与工具</h4>
+        <a href="/#category">分类入口</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#rank">产区榜单</a>
+      </div>
+      <div class="footer-col">
+        <h4>互动与资讯</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#recommend">相关推荐</a>
+        <a href="/#top">回到顶部</a>
+      </div>
+    </div>
+    <div class="footer-note">
+      <span>示例数据说明：页面条目、批号、评分均为示例生成，非真实交易或质量声明。页脚更新时间为 2026-11-07，对应正文「第 12 号条目评分调整」与「10 月质检摘要」两项可核对记录。</span>
+      <span>© 2026 91干逼精产区 · 内容索引示例</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"91干逼精产区",
+  "description":"按工艺路线、批次来源与质检口径整理精品内容产区条目的导航页。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"双段回温的第二段一般要多久？","acceptedAnswer":{"@type":"Answer","text":"第二段回温时长通常占全程30%至45%，以D-1029批次为例，全程6.5小时里第二段占2.5小时，约38%。低于30%时稳定性优势不明显。"}},
+    {"@type":"Question","name":"综合分8.9和8.6差在哪里？","acceptedAnswer":{"@type":"Answer","text":"第12号条目11月6日第二次复检，双段回温曲线重合度从83%提到91%，工艺完成度加0.3分，评分由8.6调整为8.9。"}},
+    {"@type":"Question","name":"低温慢走的温差按什么口径算？","acceptedAnswer":{"@type":"Answer","text":"11月4日起按批次内最高与最低记录之差计算，替换原抽样估算法。西南D-1103批次按新口径为1.2℃。"}},
+    {"@type":"Question","name":"单段直压为什么合格率偏低？","acceptedAnswer":{"@type":"Answer","text":"17组单段样本合格率78%，比双段回温低13个百分点，主要差在全程温差，单段上限2.4℃，双段1.8℃，二次修订比例也更高。"}},
+    {"@type":"Question","name":"只做过一轮复检的条目能信吗？","acceptedAnswer":{"@type":"Answer","text":"可作参考，但不建议与两轮以上样本直接比较。一轮复检只能说明单次结果，无法看出波动，评分旁会标待复检。"}},
+    {"@type":"Question","name":"月度质检摘要里14项异常都是什么问题？","acceptedAnswer":{"@type":"Answer","text":"9项参数修订，主要是回温时长不足与温度漂移；3项批次来源标注更正；2项待下一轮复检确认。"}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  "use strict";
+  var stick = document.querySelector('.stick-top');
+  var navMain = document.getElementById('navMain');
+  var menuBtn = document.getElementById('menuBtn');
+  var sideNav = document.getElementById('sideNav');
+  var toTop = document.getElementById('toTop');
+  var searchInput = document.getElementById('searchInput');
+  var searchResult = document.getElementById('searchResult');
+
+  function offsetHeight(){
+    return stick ? stick.offsetHeight : 0;
+  }
+  function setVar(){
+    document.documentElement.style.setProperty('--stick-h', offsetHeight() + 'px');
+  }
+  setVar();
+  window.addEventListener('resize', setVar);
+
+  // 菜单
+  menuBtn.addEventListener('click', function(){
+    var open = navMain.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navMain.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && navMain.classList.contains('open')){
+      navMain.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  // 平滑滚动偏移
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="/#"]');
+    if(!a) return;
+    var id = a.getAttribute('href').slice(2);
+    var target = document.getElementById(id);
+    if(!target) return;
+    e.preventDefault();
+    var top = target.getBoundingClientRect().top + window.pageYOffset - offsetHeight() - 8;
+    window.scrollTo({top: Math.max(top,0), behavior: 'smooth'});
+    if(history.pushState) history.pushState(null,'','#/' + id);
+  });
+
+  // 滚动高亮 + 回到顶部
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.section'));
+  var sideLinks = Array.prototype.slice.call(sideNav.querySelectorAll('a'));
+  var mainLinks = Array.prototype.slice.call(navMain.querySelectorAll('a'));
+  function onScroll(){
+    var pos = window.pageYOffset + offsetHeight() + 40;
+    var current = '';
+    sections.forEach(function(s){
+      if(s.offsetTop <= pos) current = s.id;
+    });
+    sideLinks.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '/#' + current);
+    });
+    mainLinks.forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('href') === '/#' + current);
+    });
+    if(window.pageYOffset > 420){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 搜索：本地查找
+  function buildIndex(){
+    var items = [];
+    document.querySelectorAll('main h2, main h3').forEach(function(h){
+      var sec = h.closest('.section');
+      if(!sec) return;
+      items.push({text: h.textContent.trim(), id: sec.id});
+    });
+    document.querySelectorAll('.faq-list summary').forEach(function(s){
+      var d = s.closest('details');
+      var sec = s.closest('.section');
+      if(sec) items.push({text: s.textContent.trim(), id: sec.id, sub: d ? (d.querySelector('.faq-body')?d.querySelector('.faq-body').textContent.trim():'') : ''});
+    });
+    document.querySelectorAll('.rec-cloud a').forEach(function(a){
+      var id = a.getAttribute('href').slice(2);
+      items.push({text: a.textContent.trim(), id: id});
+    });
+    return items;
+  }
+  var index = buildIndex();
+  function render(list, q){
+    searchResult.innerHTML = '';
+    if(!list.length){
+      var empty = document.createElement('div');
+      empty.className = 'empty';
+      empty.textContent = '没有找到「' + q + '」相关条目。试试「双段回温」「D-1029」「质检摘要」这类具体词。';
+      searchResult.appendChild(empty);
+    } else {
+      list.slice(0,12).forEach(function(it){
+        var a = document.createElement('a');
+        a.href = '/#' + it.id;
+        a.setAttribute('role','option');
+        a.textContent = it.text;
+        searchResult.appendChild(a);
+      });
+    }
+    searchResult.classList.add('on');
+  }
+  searchInput.addEventListener('input', function(){
+    var q = this.value.trim().toLowerCase();
+    if(!q){ searchResult.classList.remove('on'); searchResult.innerHTML=''; return; }
+    var hit = index.filter(function(it){
+      return (it.text + ' ' + (it.sub||'')).toLowerCase().indexOf(q) > -1;
+    });
+    render(hit, this.value.trim());
+  });
+  searchInput.addEventListener('focus', function(){
+    if(this.value.trim() && searchResult.innerHTML) searchResult.classList.add('on');
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-box')) searchResult.classList.remove('on');
+  });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ searchResult.classList.remove('on'); this.blur(); }
+  });
+})();
+</script>
+
+</body>
+                                            </html>
